@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_qyXqYHZmEeeNi53m8CDVPw" targetNamespace="http://tns.tibco.com/bw/composite/CustomerProducts.module" name="CustomerProducts.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_iu1cUHZnEeeNi53m8CDVPw" name="customer-products" promote="ComponentProcess/customer-products">
+    <sca:interface.wsdl xmi:id="_iu5twHZnEeeNi53m8CDVPw" interface="http://xmlns.example.com/20170801103819PLT#wsdl.interface(customer-products)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_iu_0YHZnEeeNi53m8CDVPw" name="RestService" path="/customer/products" docBasePath="http://localhost:7777/CustomerProducts.module" docResourcePath="CustomerProducts" basePath="/" connector="customerproducts.module.CustomerProducts" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/customerproducts.module.CustomerProducts-CustomerProducts.json">
+      <operation xmi:id="_ivBCgHZnEeeNi53m8CDVPw" operationName="post" nickname="post-customer-products" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_ivLakHZnEeeNi53m8CDVPw"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ivBCgXZnEeeNi53m8CDVPw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_sOwI0HZmEeeNi53m8CDVPw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_sO1BUHZmEeeNi53m8CDVPw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_sO3dkHZmEeeNi53m8CDVPw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_sO6g4HZmEeeNi53m8CDVPw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_sO89IHZmEeeNi53m8CDVPw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_sO_ZYHZmEeeNi53m8CDVPw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_sPB1oHZmEeeNi53m8CDVPw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8C3FUHZnEeeNi53m8CDVPw" name="c2pServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AXN2cHZoEeeNi53m8CDVPw" name="serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FTJBEHZsEeeNi53m8CDVPw" name="catalogServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_q4AYUHZmEeeNi53m8CDVPw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_q4AYUXZmEeeNi53m8CDVPw" processName="customerproducts.module.CustomerProducts"/>
+    <sca:service xmi:id="_iuyZAHZnEeeNi53m8CDVPw" name="customer-products">
+      <sca:interface.wsdl xmi:id="_iuzAEHZnEeeNi53m8CDVPw" interface="http://xmlns.example.com/20170801103819PLT#wsdl.interface(customer-products)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

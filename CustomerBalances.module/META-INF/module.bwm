@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_AywnMHgOEeeXNqm7E3YxJw" targetNamespace="http://tns.tibco.com/bw/composite/CustomerBalances.module" name="CustomerBalances.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_pP_1kHgPEeeXNqm7E3YxJw" name="customer-balances" promote="ComponentProcess/customer-balances">
+    <sca:interface.wsdl xmi:id="_pQEuEHgPEeeXNqm7E3YxJw" interface="http://xmlns.example.com/20170803130844PLT#wsdl.interface(customer-balances)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_pQMC0HgPEeeXNqm7E3YxJw" name="RestService" path="/customer/balances" docBasePath="http://localhost:7777/CustomerBalances.module" docResourcePath="CustomerBalances" basePath="/" connector="customerbalances.module.CustomerBalances" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/customerbalances.module.CustomerBalances-CustomerBalances.json">
+      <operation xmi:id="_pQOfEHgPEeeXNqm7E3YxJw" operationName="post" nickname="post-customer-balances" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_pQaFQHgPEeeXNqm7E3YxJw"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_pQOfEXgPEeeXNqm7E3YxJw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_BN5rEHgOEeeXNqm7E3YxJw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BOAYwHgOEeeXNqm7E3YxJw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BOCN8HgOEeeXNqm7E3YxJw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BOEqMHgOEeeXNqm7E3YxJw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BOHGcHgOEeeXNqm7E3YxJw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BOJisHgOEeeXNqm7E3YxJw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_BOLX4HgOEeeXNqm7E3YxJw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9FN4QHgqEeeXNqm7E3YxJw" name="serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9JZ0sHgqEeeXNqm7E3YxJw" name="OCSBalanceServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9MoH0HgqEeeXNqm7E3YxJw" name="CustomerProductsServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9WE-wHgqEeeXNqm7E3YxJw" name="PCRFBalanceServiceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_A8XPIHgOEeeXNqm7E3YxJw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_A8XPIXgOEeeXNqm7E3YxJw" processName="customerbalances.module.CustomerBalances"/>
+    <sca:service xmi:id="_pP8yQHgPEeeXNqm7E3YxJw" name="customer-balances">
+      <sca:interface.wsdl xmi:id="_pP9ZUHgPEeeXNqm7E3YxJw" interface="http://xmlns.example.com/20170803130844PLT#wsdl.interface(customer-balances)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

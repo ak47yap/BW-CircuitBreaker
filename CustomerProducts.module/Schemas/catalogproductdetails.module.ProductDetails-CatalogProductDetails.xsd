@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1501556293057Converted/JsonSchema" xmlns:tns="/T1501556293057Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ProductDetailsResponseElement" type="tns:ProductDetailsResponseElement"/>
+    <xs:complexType name="ProductDetailsResponseElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="product_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+            <xs:element minOccurs="0" name="details" type="xs:string"/>
+            <xs:element minOccurs="0" name="technical_system" type="xs:string"/>
+            <xs:element minOccurs="0" name="technical_id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProductDetailsRequestElement" type="tns:ProductDetailsRequestElement"/>
+    <xs:complexType name="ProductDetailsRequestElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="product_id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

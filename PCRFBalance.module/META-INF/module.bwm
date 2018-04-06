@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_VkHrkHXEEeeUBOobDzUFOw" targetNamespace="http://tns.tibco.com/bw/composite/PCRFBalance.module" name="PCRFBalance.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_mQgpAHXHEeegCO_GR87ibw" name="pcrf-balance" promote="ComponentProcess/pcrf-balance">
+    <sca:interface.wsdl xmi:id="_mQnWsHXHEeegCO_GR87ibw" interface="http://xmlns.example.com/20170731151619PLT#wsdl.interface(pcrf-balance)" scaext:wsdlLocation="../Processes/pcrfbalance/module/Balance.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_mQuEYHXHEeegCO_GR87ibw" name="RestService" path="/pcrf/balance" docBasePath="http://localhost:7777/PCRFBalance.module" docResourcePath="PCRFBalance" basePath="/" connector="pcrfbalance.module.PCRFBalance" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/pcrfbalance.module.Balance-PCRFBalance.json">
+      <operation xmi:id="_mQxuwHXHEeegCO_GR87ibw" operationName="post" nickname="post-pcrf-balance" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_mRSsIHXHEeegCO_GR87ibw"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_mQyV0HXHEeegCO_GR87ibw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_WFLxQHXEEeeUBOobDzUFOw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WFUUIHXEEeeUBOobDzUFOw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WFWwYHXEEeeUBOobDzUFOw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WFZzsHXEEeeUBOobDzUFOw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WFdeEHXEEeeUBOobDzUFOw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WFghYHXEEeeUBOobDzUFOw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_WFi9oHXEEeeUBOobDzUFOw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dTMQEHXEEeeUBOobDzUFOw" name="pcrfDBURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fac3gHXEEeeUBOobDzUFOw" name="dbUsername" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iNb8gHXEEeeUBOobDzUFOw" name="dbPassword" type="property:password" scaext:simpleValue="#!tGTlE0xRJOHCRMCAy2EnVg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wFzjQHYAEeedAsBtE0OLVg" name="serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_V37YYHXEEeeUBOobDzUFOw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_V38mgHXEEeeUBOobDzUFOw" processName="pcrfbalance.module.Balance"/>
+    <sca:service xmi:id="_mQdlsHXHEeegCO_GR87ibw" name="pcrf-balance">
+      <sca:interface.wsdl xmi:id="_mQeMwHXHEeegCO_GR87ibw" interface="http://xmlns.example.com/20170731151619PLT#wsdl.interface(pcrf-balance)" scaext:wsdlLocation="../Processes/pcrfbalance/module/Balance.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

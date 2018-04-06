@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_mQ2nQXXHEeegCO_GR87ibw" name="pcrfbalance.module.PCRFBalance" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_mQ4ccHXHEeegCO_GR87ibw">
+    <substitutionBindings xmi:id="_mQ5qkHXHEeegCO_GR87ibw" template="host" propName="BW.HOST.NAME"/>
+    <substitutionBindings xmi:id="_QseGgHXMEeelHLf7rJXcnQ" template="port" propName="BW.CLOUD.PORT"/>
+    <substitutionBindings xmi:id="_cUGhEHYFEeedAsBtE0OLVg" template="svcRegServiceName" propName="serviceName"/>
+  </jndi:configuration>
+</jndi:namedResource>

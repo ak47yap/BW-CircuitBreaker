@@ -1,0 +1,86 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/customer/balances" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-customer-balances",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/CustomerBalancesRequestElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustomerFullInfoResponseElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustomerFullInfoResponseElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "balances" : {
+      "type" : "object",
+      "properties" : {
+        "product_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "subscribe_date" : {
+          "type" : "string"
+        },
+        "expiry_date" : {
+          "type" : "string"
+        },
+        "balance" : {
+          "type" : "string"
+        },
+        "unit" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerFullInfoResponseElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "balances" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/balances",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "CustomerBalancesRequestElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

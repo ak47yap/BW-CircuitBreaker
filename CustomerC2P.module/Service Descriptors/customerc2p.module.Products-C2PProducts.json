@@ -1,0 +1,77 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/c2p/products" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-c2p-products",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/C2PProductListRequestElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a C2PProductListElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/C2PProductListElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "C2PProductListElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "products" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/products",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "C2PProductListRequestElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        }
+      }
+    },
+    "products" : {
+      "type" : "object",
+      "properties" : {
+        "product_id" : {
+          "type" : "string"
+        },
+        "subscribe_date" : {
+          "type" : "string"
+        },
+        "expiry_date" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

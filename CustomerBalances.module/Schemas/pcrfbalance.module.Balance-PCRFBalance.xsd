@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1501737648861Converted/JsonSchema" xmlns:tns="/T1501737648861Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="BalanceResponseElement" type="tns:BalanceResponseElement"/>
+    <xs:complexType name="BalanceResponseElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="bucket_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="balance_kb" type="xs:integer"/>
+            <xs:element minOccurs="0" name="expiry_date" type="xs:string"/>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BalanceRequestElement" type="tns:BalanceRequestElement"/>
+    <xs:complexType name="BalanceRequestElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="bucket_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

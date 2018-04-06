@@ -1,0 +1,11 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://qa-integration.cloud.tibco.com:443"
+    }],
+    "resources": [{
+        "location": "Service Descriptors/pcrfbalance.module.Balance-PCRFBalance.json",
+        "type": "generated"
+    }]
+}

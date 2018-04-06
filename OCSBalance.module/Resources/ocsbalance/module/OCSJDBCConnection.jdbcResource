@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_fphX0XXQEeelHLf7rJXcnQ" name="ocsbalance.module.OCSJDBCConnection" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_fpsW8HXQEeelHLf7rJXcnQ" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_fpsW8XXQEeelHLf7rJXcnQ">
+    <substitutionBindings xmi:id="__cx4oHXREeelHLf7rJXcnQ" template="username" propName="dbUsername"/>
+    <substitutionBindings xmi:id="__qwqQHXREeelHLf7rJXcnQ" template="password" propName="dbPassword"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_fpsW8nXQEeelHLf7rJXcnQ" jdbcDriver="org.postgresql.Driver">
+      <substitutionBindings xmi:id="_BTQ5IHXSEeelHLf7rJXcnQ" template="dbURL" propName="ocsDBURL"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,27 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CustomerBalances.module/Service Descriptors/customerbalances.module.CustomerBalances-CustomerBalances.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501737077738"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerBalances.module/Service Descriptors/customerbalances.module.CustomerBalances-CustomerBalances.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501737367249"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerBalances.module/Service Descriptors/customerproducts.module.CustomerProducts-CustomerProducts.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1501737642454Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerBalances.module/Service Descriptors/ocsbalance.module.Balance-OCSBalance.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1501737645395Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerBalances.module/Service Descriptors/pcrfbalance.module.Balance-PCRFBalance.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1501737648861Converted/JsonSchema"
+    }
+]}

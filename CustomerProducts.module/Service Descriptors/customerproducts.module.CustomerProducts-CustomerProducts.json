@@ -1,0 +1,89 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/customer/products" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-customer-products",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/CustomerProductsRequestElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustomerProductsResponseElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustomerProductsResponseElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CustomerProductsRequestElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        }
+      }
+    },
+    "CustomerProductsResponseElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "products" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/products",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "products" : {
+      "type" : "object",
+      "properties" : {
+        "product_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "details" : {
+          "type" : "string"
+        },
+        "subscribe_date" : {
+          "type" : "string"
+        },
+        "expiry_date" : {
+          "type" : "string"
+        },
+        "technical_system" : {
+          "type" : "string"
+        },
+        "technical_id" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

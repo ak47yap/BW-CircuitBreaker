@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_dJ-80HXcEeelHLf7rJXcnQ" targetNamespace="http://tns.tibco.com/bw/composite/CatalogProductDetails.module" name="CatalogProductDetails.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_GZpjInXdEeelHLf7rJXcnQ" name="catalog-product-details" promote="ComponentProcess/catalog-product-details">
+    <sca:interface.wsdl xmi:id="_GZqKMHXdEeelHLf7rJXcnQ" interface="http://xmlns.example.com/20170731180857PLT#wsdl.interface(catalog-product-details)" scaext:wsdlLocation="../Processes/catalogproductdetails/module/ProductDetails.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_GZqKMXXdEeelHLf7rJXcnQ" name="RestService" path="/catalog/product/details" docBasePath="http://localhost:7777/CatalogProductDetails.module" docResourcePath="CatalogProductDetails" basePath="/" connector="catalogproductdetails.module.CatalogProductDetails" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/catalogproductdetails.module.ProductDetails-CatalogProductDetails.json">
+      <operation xmi:id="_GZqxQHXdEeelHLf7rJXcnQ" operationName="post" nickname="post-catalog-product-details" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_GZxe8HXdEeelHLf7rJXcnQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_GZqxQXXdEeelHLf7rJXcnQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_dQ3n8HXcEeelHLf7rJXcnQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dQ5dIHXcEeelHLf7rJXcnQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dQ6rQHXcEeelHLf7rJXcnQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dQ7SUHXcEeelHLf7rJXcnQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dQ8gcHXcEeelHLf7rJXcnQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dQ9HgHXcEeelHLf7rJXcnQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_dQ-VoHXcEeelHLf7rJXcnQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_3WVU8HXcEeelHLf7rJXcnQ" name="catalogDBURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3cAfIHXcEeelHLf7rJXcnQ" name="dbUser" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3hSAsHXcEeelHLf7rJXcnQ" name="dbPassword" type="property:password" scaext:simpleValue="#!l9ddRNfgRv0BI7L3iPAcCQ==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lWeRkHXmEeedAsBtE0OLVg" name="serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_dNqi8HXcEeelHLf7rJXcnQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_dNqi8XXcEeelHLf7rJXcnQ" processName="catalogproductdetails.module.ProductDetails"/>
+    <sca:service xmi:id="_GZpjIHXdEeelHLf7rJXcnQ" name="catalog-product-details">
+      <sca:interface.wsdl xmi:id="_GZpjIXXdEeelHLf7rJXcnQ" interface="http://xmlns.example.com/20170731180857PLT#wsdl.interface(catalog-product-details)" scaext:wsdlLocation="../Processes/catalogproductdetails/module/ProductDetails.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

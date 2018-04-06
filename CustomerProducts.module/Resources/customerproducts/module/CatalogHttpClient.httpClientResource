@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_cwHJMXZpEeeNi53m8CDVPw" name="customerproducts.module.CatalogHttpClient" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_cwHJMnZpEeeNi53m8CDVPw" httpClientVersion="httpcomponents" enableHystrix="true" hystrixCommandName="CustomerProducts-catalog" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="2000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="5" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1" enableServiceDiscovery="true">
+    <substitutionBindings xmi:id="_KYcG8HZsEeeNi53m8CDVPw" template="svcDiscServiceName" propName="catalogServiceName"/>
+    <tcpDetails xmi:id="_cwHJM3ZpEeeNi53m8CDVPw" host="catalogproductdetails.pcfdemo.tibco.com"/>
+  </jndi:configuration>
+</jndi:namedResource>

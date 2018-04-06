@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_d6g9gXgvEeeV6oq1iqkDtg" name="customerfullinfo.module.CustomerBalances" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_d6hkkHgvEeeV6oq1iqkDtg" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" enableHystrix="true" hystrixCommandName="customer-balances" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="5" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1" enableServiceDiscovery="true">
+    <substitutionBindings xmi:id="_dWxlAHg0EeeV6oq1iqkDtg" template="svcDiscServiceName" propName="customerBalancesSN"/>
+    <tcpDetails xmi:id="_d6hkkXgvEeeV6oq1iqkDtg" host="customerbalances.pcfdemo.tibco.com"/>
+  </jndi:configuration>
+</jndi:namedResource>

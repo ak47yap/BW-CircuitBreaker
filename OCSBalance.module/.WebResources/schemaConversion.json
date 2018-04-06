@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/OCSBalance.module/Service Descriptors/ocsbalance.module.Balance-OCSBalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501490968035"
+    },
+    {
+        "jsonSchemaLocation": "/OCSBalance.module/Service Descriptors/ocsbalance.module.Balance-OCSBalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501491139537"
+    }
+]}

@@ -1,0 +1,22 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CustomerProducts.module/Service Descriptors/customerproducts.module.CustomerProducts-CustomerProducts.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501555212825"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerProducts.module/Service Descriptors/customerproducts.module.CustomerProducts-CustomerProducts.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501555430517"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerProducts.module/Service Descriptors/customerc2p.module.Products-C2PProducts.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1501555547167Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerProducts.module/Schemas/catalogproductdetails.module.ProductDetails-CatalogProductDetails.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1501556293057Converted/JsonSchema"
+    }
+]}

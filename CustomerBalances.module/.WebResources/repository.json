@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/customerbalances.module.CustomerBalances-CustomerBalances.json",
+        "type": "generated"
+    }]
+}

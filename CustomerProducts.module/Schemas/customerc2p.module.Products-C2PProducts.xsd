@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1501555547167Converted/JsonSchema" xmlns:tns="/T1501555547167Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="C2PProductListElement" type="tns:C2PProductListElement"/>
+    <xs:complexType name="C2PProductListElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="products" type="tns:products"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="products" type="tns:products"/>
+    <xs:complexType name="products">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="subscribe_date" type="xs:string"/>
+            <xs:element minOccurs="0" name="product_id" type="xs:string"/>
+            <xs:element minOccurs="0" name="expiry_date" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="C2PProductListRequestElement" type="tns:C2PProductListRequestElement"/>
+    <xs:complexType name="C2PProductListRequestElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CatalogProductDetails.module/Service Descriptors/catalogproductdetails.module.ProductDetails-CatalogProductDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501495799167"
+    },
+    {
+        "jsonSchemaLocation": "/CatalogProductDetails.module/Service Descriptors/catalogproductdetails.module.ProductDetails-CatalogProductDetails.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501495873458"
+    }
+]}

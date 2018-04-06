@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/PCRFBalance.module/Service Descriptors/pcrfbalance.module.Balance-PCRFBalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501485795981"
+    },
+    {
+        "jsonSchemaLocation": "/PCRFBalance.module/Service Descriptors/pcrfbalance.module.Balance-PCRFBalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501485891132"
+    }
+]}

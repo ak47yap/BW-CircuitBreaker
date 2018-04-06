@@ -1,0 +1,13 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/customerc2p.module.Process-C2PProducts.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/customerc2p.module.Products-C2PProducts.json",
+            "type": "generated"
+        }
+    ]
+}

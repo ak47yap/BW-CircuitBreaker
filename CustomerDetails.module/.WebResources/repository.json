@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/customerdetails.module.CustomerDetails-CustomerDetails.json",
+        "type": "generated"
+    }]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1501750467551Converted/JsonSchema" xmlns:tns="/T1501750467551Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CustomerDetailsRequestElement" type="tns:CustomerDetailsRequestElement"/>
+    <xs:complexType name="CustomerDetailsRequestElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CustomerDetailsResponseElement" type="tns:CustomerDetailsResponseElement"/>
+    <xs:complexType name="CustomerDetailsResponseElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="city" type="xs:string"/>
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+            <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

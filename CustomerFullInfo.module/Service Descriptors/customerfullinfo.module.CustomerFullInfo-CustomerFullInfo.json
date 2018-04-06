@@ -1,0 +1,92 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/customer/full/info" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-customer-full-info",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/CustomerFullInfoRequestElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a CustomerFullInfoResponseElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/CustomerFullInfoResponseElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "CustomerFullInfoResponseElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "products" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/products",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "CustomerFullInfoRequestElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        }
+      }
+    },
+    "products" : {
+      "type" : "object",
+      "properties" : {
+        "subscribe_date" : {
+          "type" : "string"
+        },
+        "unit" : {
+          "type" : "string"
+        },
+        "balance" : {
+          "type" : "string"
+        },
+        "product_id" : {
+          "type" : "string"
+        },
+        "expiry_date" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

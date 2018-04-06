@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Z5DqgHXPEeelHLf7rJXcnQ" targetNamespace="http://tns.tibco.com/bw/composite/OCSBalance.module" name="OCSBalance.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_FezFcHXSEeelHLf7rJXcnQ" name="ocs-balance" promote="ComponentProcess/ocs-balance">
+    <sca:interface.wsdl xmi:id="_Fe2IwHXSEeelHLf7rJXcnQ" interface="http://xmlns.example.com/20170731163531PLT#wsdl.interface(ocs-balance)" scaext:wsdlLocation="../Processes/ocsbalance/module/Balance.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Fe6aMHXSEeelHLf7rJXcnQ" name="RestService" path="/ocs/balance" docBasePath="http://localhost:7777/OCSBalance.module" docResourcePath="OCSBalance" basePath="/" connector="ocsbalance.module.OCSBalance" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ocsbalance.module.Balance-OCSBalance.json">
+      <operation xmi:id="_Fe7BQHXSEeelHLf7rJXcnQ" operationName="post" nickname="post-ocs-balance" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_FfDkIHXSEeelHLf7rJXcnQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Fe7BQXXSEeelHLf7rJXcnQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_Z_5SUHXPEeelHLf7rJXcnQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Z_-K0HXPEeelHLf7rJXcnQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Z__Y8HXPEeelHLf7rJXcnQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aABOIHXPEeelHLf7rJXcnQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aADDUHXPEeelHLf7rJXcnQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aAERcHXPEeelHLf7rJXcnQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_aAGGoHXPEeelHLf7rJXcnQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_xwg88HXREeelHLf7rJXcnQ" name="ocsDBURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_x48gMHXREeelHLf7rJXcnQ" name="dbUsername" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_x_bisHXREeelHLf7rJXcnQ" name="dbPassword" type="property:password" scaext:simpleValue="#!+G2CC3qWtHtF9xj96jszqg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_QFfocHYAEeedAsBtE0OLVg" name="serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Z8AQ0HXPEeelHLf7rJXcnQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z8AQ0XXPEeelHLf7rJXcnQ" processName="ocsbalance.module.Balance"/>
+    <sca:service xmi:id="_FewpMHXSEeelHLf7rJXcnQ" name="ocs-balance">
+      <sca:interface.wsdl xmi:id="_FexQQHXSEeelHLf7rJXcnQ" interface="http://xmlns.example.com/20170731163531PLT#wsdl.interface(ocs-balance)" scaext:wsdlLocation="../Processes/ocsbalance/module/Balance.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

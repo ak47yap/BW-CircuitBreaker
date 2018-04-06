@@ -1,0 +1,68 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/pcrf/balance" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-pcrf-balance",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/BalanceRequestElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a BalanceResponseElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/BalanceResponseElement"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "BalanceResponseElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "bucket_id" : {
+          "type" : "string"
+        },
+        "balance_kb" : {
+          "type" : "integer"
+        },
+        "expiry_date" : {
+          "type" : "string"
+        }
+      }
+    },
+    "BalanceRequestElement" : {
+      "type" : "object",
+      "properties" : {
+        "msisdn" : {
+          "type" : "string"
+        },
+        "bucket_id" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

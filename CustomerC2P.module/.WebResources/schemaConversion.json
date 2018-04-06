@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/CustomerC2P.module/Service Descriptors/customerc2p.module.Process-C2PProducts.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501492624282"
+    },
+    {
+        "jsonSchemaLocation": "/CustomerC2P.module/Service Descriptors/customerc2p.module.Process-C2PProducts.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1501492582389"
+    }
+]}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1501492624282" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1501492624282">
+  <complexType name="C2PProductListRequestElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="msisdn" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="C2PProductListRequestElement" type="tns:C2PProductListRequestElementType"/>
+</schema>
